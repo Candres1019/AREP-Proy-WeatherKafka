@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="Pagina Parcial 2 ARSW" name="description">
+    <meta content="CalderonOrtega" name="copyright">
+    <meta content="index" name="robots">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="./img/favicon.ico" rel="icon" type="image/x-icon"/>
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js"
+            type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./js/apiclient.js"></script>
+    <script src="./js/app.js"></script>
+    <title>Parcial 2do Corte</title>
+</head>
+
+
+<body onload="app.initMap()">
+<div>
+    <div class="container">
+        <h1>App del Clima</h1>
+        <h5>Por: Andres Calderón</h5>
+    </div>
+    <div class="container-button">
+        <p>
+            <label for="city"></label><input id="city" placeholder="London" type="text">
+            <button class="btn btn-dark" onclick="app.getCityWeatherByName()">Buscar</button>
+        </p>
+    </div>
+    <div class="principal-container">
+        <h3>Info General</h3>
+        <table class="table" id="part1">
+            <thead class="thead-light">
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Zona Horaria</th>
+                <th>Visibilidad</th>
+                <th>Longitud</th>
+                <th>Latitud</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <h3>Clima</h3>
+        <table class="table" id="part2">
+            <thead class="thead-light">
+            <tr>
+                <th>Principal</th>
+                <th>Descripción</th>
+                <th>Temp</th>
+                <th>Temp Min</th>
+                <th>Temp Max</th>
+                <th>Sensación</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <table class="table" id="part3">
+            <thead class="thead-light">
+            <tr>
+                <th>Presión</th>
+                <th>Humedad</th>
+                <th>Deg</th>
+                <th>Velocidad Viento</th>
+                <th>Amanecer</th>
+                <th>Puesta Sol</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div class="mapa" id="mapa"></div>
+</div>
+</body>
+
+<footer class="text-center">
+</footer>
+
+</html>
