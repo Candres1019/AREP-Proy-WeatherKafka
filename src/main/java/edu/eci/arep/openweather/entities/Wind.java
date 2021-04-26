@@ -1,4 +1,4 @@
-package edu.eci.arsw.openweather.entities;
+package edu.eci.arep.openweather.entities;
 
 /**
  * Clase Wind

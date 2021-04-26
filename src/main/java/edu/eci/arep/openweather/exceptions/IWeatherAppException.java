@@ -1,4 +1,4 @@
-package edu.eci.arsw.openweather.exceptions;
+package edu.eci.arep.openweather.exceptions;
 
 /**
  * Clase de excepción IWeatherAppException

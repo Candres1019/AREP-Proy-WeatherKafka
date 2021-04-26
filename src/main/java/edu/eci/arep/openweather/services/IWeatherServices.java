@@ -1,13 +1,11 @@
-package edu.eci.arsw.openweather.services;
+package edu.eci.arep.openweather.services;
 
-import edu.eci.arsw.openweather.entities.City;
-import edu.eci.arsw.openweather.exceptions.IWeatherAppException;
-import org.springframework.stereotype.Service;
+import edu.eci.arep.openweather.entities.City;
+import edu.eci.arep.openweather.exceptions.IWeatherAppException;
 
 /**
  * Interfaz IWeatherServices
  */
-@Service
 public interface IWeatherServices {
 
     /**
@@ -19,4 +17,7 @@ public interface IWeatherServices {
      */
     City getCityByName(String name) throws IWeatherAppException;
 
+    City getCityWeatherByID(Integer id) throws IWeatherAppException;
+
+    City getCityWeatherByLatLon(Double lat, Double lon) throws IWeatherAppException;
 }

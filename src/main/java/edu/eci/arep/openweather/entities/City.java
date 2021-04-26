@@ -1,4 +1,4 @@
-package edu.eci.arsw.openweather.entities;
+package edu.eci.arep.openweather.entities;
 
 import java.util.Date;
 import java.util.List;
