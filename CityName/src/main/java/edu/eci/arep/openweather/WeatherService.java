@@ -24,9 +24,10 @@ public class WeatherService {
         port(getPort());
         staticFiles.location("/static");
         init();
-        get("/city/name", (request, response) -> {
+        get("/city", (request, response) -> {
             response.type(contentType);
             String cityName = request.queryParams("name");
+            System.out.println(cityName);
             try {
                 response.status(200);
                 IWeatherServices iWeatherServices = new IWeatherServicesImpl();

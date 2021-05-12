@@ -24,7 +24,7 @@ public class WeatherService {
         port(getPort());
         staticFiles.location("/static");
         init();
-        get("/city/id", (request, response) -> {
+        get("/city", (request, response) -> {
             response.type(contentType);
             Integer cityID = Integer.valueOf(request.queryParams("id"));
             try {

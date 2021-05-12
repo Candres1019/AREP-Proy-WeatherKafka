@@ -24,7 +24,7 @@ public class WeatherService {
         port(getPort());
         staticFiles.location("/static");
         init();
-        get("/city/cord", (request, response) -> {
+        get("/city", (request, response) -> {
             response.type(contentType);
             Double longitud = Double.valueOf(request.queryParams("lon"));
             Double latitud = Double.valueOf(request.queryParams("lat"));
